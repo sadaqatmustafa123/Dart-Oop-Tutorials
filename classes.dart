@@ -1,14 +1,19 @@
 void main() {
   Person person = Person();
+  Person person1 = Person();
+
+  person.name = "Sadaqat";
+  person.name1 = "Shoaib";
   person.displayInfo();
+  // person1.displayInfo();
 }
 
 class Person {
-  String name = 'Sadaqat';
-  int age = 22;
-  String fName = 'Najam';
-
+  String? name;
+  int? age;
+  String? name1;
+  int? age1;
   void displayInfo() {
-    print("My age is: $age");
+    print("Person name is: $name");
   }
 }
