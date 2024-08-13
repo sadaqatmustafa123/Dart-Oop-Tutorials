@@ -6,6 +6,7 @@ void main() {
   studentOne.studentId = 50212;
   studentOne.displayStudentInfo();
   studentOne.updateAge(24);
+  studentOne.updateGrade('A+');
 }
 
 class Student {
@@ -25,5 +26,10 @@ class Student {
   void updateAge(int newAge) {
     age = newAge;
     print("Updated age of $name is $newAge");
+  }
+
+  void updateGrade(String newGrade) {
+    grade = newGrade;
+    print("Updated grade of $name is $newGrade");
   }
 }
