@@ -1,5 +1,4 @@
 void main() {
-  //idk what function
   print(hundrethMultiple(2));
 }
 
