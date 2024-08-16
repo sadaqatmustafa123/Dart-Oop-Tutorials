@@ -1,10 +1,15 @@
 //positional parameters
 void main() {
-  Map userData = userMap("Sid", 20, "Male", 16);
-  print("Std details are fellow: $userData");
+  Map nedianData = Nedian("Sid", 20, "Male", 16);
+
+  String stdName = nedianData['name'];
+  String stdGender = nedianData['gender'];
+  int stdAge = nedianData['age'];
+  print(
+      "Std details are as:\nStudent name is: $stdName\nStudent gender is: $stdGender\nStudent age is: $stdAge");
 }
 
-Map userMap(String name, int age, String gender, int grade) {
+Map Nedian(String name, int age, String gender, int grade) {
   return {
     'name': name,
     'age': age,
